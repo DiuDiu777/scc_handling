@@ -27,7 +27,7 @@ colors = {
     'Traversal/Misc': '#CFD8DC',  
 }
 
-fig, ax = plt.subplots(figsize=(17, 6.75))
+fig, ax = plt.subplots(figsize=(20, 6))
 
 bar_width = 0.6
 indices = np.arange(len(df))
@@ -52,7 +52,7 @@ for i, comp in enumerate(plot_order):
         if val >= 3:
             ax.text(x_center, y_center, f"{int(round(val))}%", 
                     ha='center', va='center', color=text_color, 
-                    fontsize=12, fontweight='bold')
+                    fontsize=16, fontweight='bold')
         
         else:
             offset_dir = 1 if (i + j) % 2 == 0 else -1
@@ -66,7 +66,7 @@ for i, comp in enumerate(plot_order):
                 xytext=(x_center, xytext_y),
                 arrowprops=dict(arrowstyle='-', color='#444444', linewidth=0.8),
                 ha='center', va=va_align,
-                fontsize=14, color='#333333', fontweight='bold'
+                fontsize=18, color='#333333', fontweight='bold'
             )
 
     left_bottom += values
