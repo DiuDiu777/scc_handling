@@ -592,8 +592,6 @@ pub fn case_22<'a>(p1: &'a i32, p2: &'a i32, p3: &'a i32, run_b: bool) -> &'a i3
         }
     }
     res
-
-    // res=p1 is killed by Loop A.
 }
 
 /// Expected alias analysis result:(0, 2), (0, 3)

@@ -86,7 +86,7 @@ pub fn case_1<'a>(p1: &'a i32, p2: &'a i32, p3: &'a i32, start_state: LoopState)
         outer_iter += 1;
         if outer_iter > 3 {
             break;
-        } // Safety termination
+        }
     }
     res
 }
